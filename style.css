@@ -22,11 +22,11 @@ body {
     padding: 2%;
     width: 100%;
     background-color: var(--lightblue);
-    color: var(--light);
+    color: var(--mango);
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 5rem;
     position:inherit;
     margin-top: -20px;
     margin-left: 2px;
@@ -35,7 +35,7 @@ h1 {
 
 
 .header p {
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-top: 20px;
     margin-left: 10px;
     
@@ -46,7 +46,7 @@ h1 {
 }
 
 .nav ul {
-    font-size: 35px;
+    font-size: 3.5rem;
     padding-right: 20px;
       margin-top: -70px;
       display: flex;
@@ -65,8 +65,12 @@ h1 {
 
 a {
     flex-wrap: wrap;
-    color: var(--light);;
+    color: var(--mango);
    
+}
+
+a:hover {
+    color: var(--red-orange);
 }
 
 .logo {
@@ -74,7 +78,7 @@ a {
     margin-top: -98px;
     margin-right: 25px;
     max-height: 125px;
-    border: 2px solid var(--light);
+    border: 2px solid var(--mango);
 }
 
 .wrapper {
@@ -83,11 +87,72 @@ a {
 }
 
 .left {
-    border-right: 3px solid var(--lightblue);
     height: 100vh;
-    width:30%;
+    width:25%;
+    border-right: 3px solid var(--lightblue);
 }
 
 .right {
     width: 70%;
+}
+
+.wrapper h2 {
+    font-size: 6.5rem;
+    color: var(--lightblue);
+}
+
+#about-me h2{
+    padding-top: 100px;
+    padding-left: 390px;
+    position: relative;
+}
+
+#work h2 {
+    padding-top: 500px;
+    padding-left: 420px;
+    position: absolute;
+}
+
+#contact-me {
+    margin-top: 1200px;
+    padding-left: 222px;
+    position: absolute;
+}
+
+.right {
+    font-size: 20px;
+    color: var(--lightblue);
+}
+
+
+.text-about {
+    font-size: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+     padding-top: 100px;
+    padding-left: 55px;
+}
+
+.container {
+    position: relative;
+}
+
+.landing-page {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 50px;
+    width: 100%; 
+}
+    
+
+.bottom-left h3 {
+    font-size: 5rem;
+    position: absolute;
+    color: var(--mango);
+    background-color: var(--almond);
+    border: 1px solid var(--mango);
+    height: 50px;
+    justify-content: center;
+    left: 65px;
+    bottom: 10px;
 }
