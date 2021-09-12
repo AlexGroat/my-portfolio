@@ -48,8 +48,8 @@ h1 {
 .nav ul {
     font-size: 3.5rem;
     padding-right: 20px;
-      margin-top: -70px;
-      display: flex;
+    margin-top: -70px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     float:right;
@@ -97,25 +97,25 @@ a:hover {
 }
 
 .wrapper h2 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     color: var(--lightblue);
 }
 
 #about-me h2{
     padding-top: 100px;
-    padding-left: 390px;
+    padding-left: 270px;
     position: relative;
 }
 
 #work h2 {
     padding-top: 500px;
-    padding-left: 420px;
+    padding-left: 300px;
     position: absolute;
 }
 
 #contact-me {
-    margin-top: 1200px;
-    padding-left: 222px;
+    margin-top: 1500px;
+    padding-left: 122px;
     position: absolute;
 }
 
@@ -135,24 +135,49 @@ a:hover {
 
 .container {
     position: relative;
+    
+}
+
+.container h3 {
+    position: absolute;
+  bottom: 20px;
+  right: 1010px;
+  background-color: var(--light);
+  color: var(--mango);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .landing-page {
     position: relative;
     padding-top: 100px;
     padding-left: 50px;
-    width: 100%; 
+    width: 90%; 
+    height: 80%;
 }
-    
 
-.bottom-left h3 {
-    font-size: 5rem;
-    position: absolute;
-    color: var(--mango);
-    background-color: var(--almond);
-    border: 1px solid var(--mango);
-    height: 50px;
-    justify-content: center;
-    left: 65px;
-    bottom: 10px;
+.smaller-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+   position:absolute;
+   padding-left: 50px;
+   margin-top:20px;
 }
+
+#img-1, #img-2, #img-3, #img-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+}
+
+.text-contact a {
+    position: relative;
+    top: 600px;
+   font-size: 3.5rem;
+   justify-content: space-evenly;
+   padding: 10px;
+}
+
