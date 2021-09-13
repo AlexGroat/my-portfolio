@@ -1,183 +1,152 @@
-/*Friday*/
 :root {
-    --lightblue: #4484CE;
-    --almond: #d9d9d9;
-    --red-orange: #ff6e40;
-    --mango: #F19F4D;
-    --light: #F9CFC0;
-        
-}
-
-html {
-    font-size: 10px;
+    --dark-green: #8D8741;
+    --blue: #659DBD;
+    --tan: #DAAD86;
+    --brown: #BC986A;
+    --almond: #FBEEC1;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     background-color: var(--almond);
 }
-
-
-.header {
-    padding: 2%;
+header {
     width: 100%;
-    background-color: var(--lightblue);
-    color: var(--mango);
+    font-size: 2rem;
+    background-color: var(--blue);
+    
 }
 
 h1 {
-    font-size: 5rem;
-    position:inherit;
-    margin-top: -20px;
-    margin-left: 2px;
-    
-}
-
-
-.header p {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    margin-left: 10px;
-    
-}
-.nav {
-    width: 100%;
-    
-}
-
-.nav ul {
-    font-size: 3.5rem;
-    padding-right: 20px;
-    margin-top: -70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    float:right;
-    
-}
-
-.nav li {
-        width: 33%;
-        word-spacing: 100px;
-    align-items: center;
-    
-}
-
-a {
-    flex-wrap: wrap;
-    color: var(--mango);
-   
-}
-
-a:hover {
-    color: var(--red-orange);
-}
-
-.logo {
-    float: right;
-    margin-top: -98px;
-    margin-right: 25px;
-    max-height: 125px;
-    border: 2px solid var(--mango);
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
-.left {
-    height: 100vh;
-    width:25%;
-    border-right: 3px solid var(--lightblue);
-}
-
-.right {
-    width: 70%;
-}
-
-.wrapper h2 {
-    font-size: 5.5rem;
-    color: var(--lightblue);
-}
-
-#about-me h2{
-    padding-top: 100px;
-    padding-left: 270px;
-    position: relative;
-}
-
-#work h2 {
-    padding-top: 500px;
-    padding-left: 300px;
-    position: absolute;
-}
-
-#contact-me {
-    margin-top: 1500px;
-    padding-left: 122px;
-    position: absolute;
-}
-
-.right {
-    font-size: 20px;
-    color: var(--lightblue);
-}
-
-
-.text-about {
-    font-size: 3.5rem;
-    display: flex;
-    flex-wrap: wrap;
-     padding-top: 100px;
-    padding-left: 55px;
+    font-size: 10rem;    
+    margin-top: 10px;
+    padding-top:20px;
+    padding-left: 20px;
+    color: var(--brown);
 }
 
 .container {
+    display: flex;
+    flex-direction: row;
     position: relative;
+}
+
+.container img {
+   padding: 10px 10px;
+}
+
+nav {
+    position: relative;
+    background-color: var(--tan);
+    overflow: hidden;
+}
+
+nav li {
+    display:inline; 
+    margin: 2% 0;
+    padding: 1% 0;
+    text-align: right;
+}
+  
+ nav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    
+}
+    
+ nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.content {
+    background-color: var(--dark-green);
+    font-size: 1.25rem;
+    color: var(--almond);
+}
+
+.about-me {
+    padding-top: 30px;
     
 }
 
-.container h3 {
-    position: absolute;
-  bottom: 20px;
-  right: 1010px;
-  background-color: var(--light);
-  color: var(--mango);
-  padding-left: 20px;
-  padding-right: 20px;
+section h2 {
+    font-size: 30px;
+    color: var(--dark-green);
+    padding-left: 10px;
 }
 
-.landing-page {
-    position: relative;
+p {
+    font-size: 2rem;
+    color: var(--blue);
+    padding-left: 10px;
+}
+
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.p1 {
     padding-top: 100px;
-    padding-left: 50px;
-    width: 90%; 
-    height: 80%;
+}
+.p1 img {
+    width: 80%;
+    height: 500px;
+    margin-left: 10px;
+    border: 2px solid var(--dark-green);
 }
 
-.smaller-imgs {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 60%;
-   position:absolute;
-   padding-left: 50px;
-   margin-top:20px;
+.work img {
+    margin: 10px 10px;
+    border: 2px solid var(--dark-green);
 }
 
-#img-1, #img-2, #img-3, #img-4 {
+.p1 p {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding: 10px;
+    position: absolute;
+    font-size: 2rem;
+    background-color: var(--brown);
+    color: var(--almond);
+    margin-left: 10px;
+    margin-top: -40px;
 }
 
 .text-contact a {
-    position: relative;
-    top: 600px;
-   font-size: 3.5rem;
-   justify-content: space-evenly;
-   padding: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    padding: 10px 10px;
 }
 
+.text-contact a:hover {
+    color: var(--blue);
+}
+
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    .work img {
+        width: 100%;
+    }
+
+    .p1 p {
+        font-size: 1rem;
+    }
+
+    header {
+        background-color: var(--tan);
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: var(--almond);
+    }
+}
