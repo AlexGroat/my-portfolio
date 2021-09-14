@@ -75,13 +75,14 @@ nav li {
 section h2 {
     font-size: 30px;
     color: var(--dark-green);
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 p {
     font-size: 2rem;
     color: var(--blue);
-    padding-left: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 
@@ -94,15 +95,12 @@ p {
 .p1 {
     padding-top: 100px;
 }
-.p1 img {
-    width: 80%;
-    height: 500px;
-    margin-left: 10px;
-    border: 2px solid var(--dark-green);
-}
 
-.work img {
-    margin: 10px 10px;
+.p1 img {
+    width: 70%;
+    height: 500px;
+    margin-left: 35px;
+    margin-top: 15px;
     border: 2px solid var(--dark-green);
 }
 
@@ -112,8 +110,14 @@ p {
     font-size: 2rem;
     background-color: var(--brown);
     color: var(--almond);
-    margin-left: 10px;
-    margin-top: -40px;
+    margin-left: 45px;
+    margin-top: -50px;
+}
+
+.work img {
+    margin: 10px 30px;
+    border: 2px solid var(--dark-green);
+
 }
 
 .text-contact a {
@@ -129,24 +133,45 @@ p {
 
 
 @media screen and (max-width: 480px) {
-    p {
-        font-size: 1.5rem;
-    }
-
-    .work img {
-        width: 100%;
-    }
-
-    .p1 p {
-        font-size: 1rem;
+    body {
+        background-color: var(--blue);
     }
 
     header {
         background-color: var(--tan);
     }
 
+    p {
+        font-size: 1.5rem;
+        color: var(--tan);
+    }
+
+    .work img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .p1 img {
+        height: 300px;
+        width: 90%;
+    }
+
+    .p1 p {
+        font-size: 1rem;
+    }
+
+    header img {
+        display: none;
+    }
+
     h1 {
         font-size: 5rem;
         color: var(--almond);
+        position: relative;
+        margin-left: 150px;
     }
+
+  section h2 {
+      color: var(--almond);
+  }
 }
